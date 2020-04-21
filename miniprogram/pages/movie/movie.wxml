@@ -1,0 +1,27 @@
+
+<van-field
+    value="{{ content }}"
+    placeholder="写一些评价吧~"
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+<van-rate value="{{ score }}" bind:change="onScoreChange" />
+<view class="movie-uploderImg">
+  <image wx:for="{{images}}" src="{{item}}"></image>
+</view>
+<van-button type="warning" bindtap="uplodImg">上传图片</van-button> 
+<van-button type="danger" size="large" bindtap="submit">提交评价</van-button> 
+
+
+<!-- <view class="movie" wx:for="{{movieList}}" wx:key="{{movieList}}">
+  <image class="movie-img" src="{{item.images.small}}"></image>
+  <view class="movie-info">
+    <view class="movie-title">{{item.title}}</view>
+    <view>观众评分：<text class="movie-score">{{item.rating.average}}</text>分</view>
+    <view>主演： 
+      <text wx:for="{{item.casts}}" wx:key="{{casts}}">{{item.name}} </text>
+    </view>
+    <view>年份：{{item.year}}</view>
+
+  </view>
+</view> -->

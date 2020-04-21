@@ -1,0 +1,29 @@
+.movie{
+  height: 300rpx;
+  display: flex;
+  padding: 10rpx;
+  border-bottom: 1px solid #ccc;
+}
+.movie:last-child{
+  border-bottom: none;
+}
+.movie-img{
+  width: 200rpx;
+  height: 100%;
+  margin-right: 20rpx;
+}
+.movie-info{
+  flex:1;
+}
+.movie-title{
+  color: #666;
+  font-size: 40rpx;
+  font-weight: bolder;
+}
+.movie-score{
+  color: #faaf00;
+}
+.movie-uploderImg image{
+  width: 300rpx;
+  height: 300rpx;
+}
